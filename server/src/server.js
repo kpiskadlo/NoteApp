@@ -8,12 +8,12 @@ const port = process.env.PORT ?? '3000';
 console.log(`\nListening on http://localhost:${port}\n`);
 
 create({
-  logger: true,
+  logger: true
 })
   .listen(port, '0.0.0.0')
   .catch(onError);
 
-function onError(error) {
+function onError (error) {
   console.error(error);
   process.exit(1);
 }

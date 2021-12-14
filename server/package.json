@@ -24,10 +24,9 @@
     "fastify-swagger": "^4.12.6"
   },
   "devDependencies": {
-    "eslint": "^8.4.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.3",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "prettier": "2.5.1",
+    "standard": "^16.0.4"
   },
   "keywords": [],
   "description": ""
