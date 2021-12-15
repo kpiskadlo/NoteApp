@@ -13,7 +13,7 @@ create({
   .listen(port, '0.0.0.0')
   .catch(onError);
 
-function onError (error) {
+function onError(error) {
   console.error(error);
   process.exit(1);
 }
