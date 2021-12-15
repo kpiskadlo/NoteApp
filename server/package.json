@@ -19,8 +19,9 @@
   "homepage": "https://github.com/kpiskadlo/NoteApp#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "fastify": "^3.24.1",
+    "fastify": "^3.25.0",
     "fastify-cors": "^6.0.2",
+    "fastify-plugin": "^3.0.0",
     "fastify-swagger": "^4.12.6"
   },
   "devDependencies": {
