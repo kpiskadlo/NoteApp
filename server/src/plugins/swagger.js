@@ -1,7 +1,7 @@
-import fp from 'fastify-plugin';
-import fastifySwagger from 'fastify-swagger';
+import fp from 'fastify-plugin'
+import fastifySwagger from 'fastify-swagger'
 
-async function swaggerPlugin(fastify, options) {
+async function swaggerPlugin (fastify, options) {
   return fastify.register(fastifySwagger, {
     routePrefix: '/api',
     exposeRoute: true,
@@ -11,7 +11,7 @@ async function swaggerPlugin(fastify, options) {
         version: '1.0'
       }
     }
-  });
+  })
 }
 
-export default fp(swaggerPlugin);
+export default fp(swaggerPlugin)
