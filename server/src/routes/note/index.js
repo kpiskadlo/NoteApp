@@ -1,7 +1,7 @@
-import * as helloWorld from './helloWorld';
+import * as helloWorld from './helloWorld'
 
 export const note = (instance, options, next) => {
-  instance.get('/', helloWorld.handler);
+  instance.get('/', helloWorld.handler)
 
-  next();
-};
+  next()
+}
