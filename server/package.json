@@ -5,7 +5,9 @@
   "main": "./src/server.js",
   "scripts": {
     "start": "node --experimental-specifier-resolution=node ./src/server.js",
-    "start:dev": "nodemon --experimental-specifier-resolution=node ./src/server.js"
+    "start:dev": "nodemon --experimental-specifier-resolution=node ./src/server.js",
+    "code:lint": "standard",
+    "code:format": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -26,7 +28,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15",
-    "prettier": "2.5.1",
     "standard": "^16.0.4"
   },
   "keywords": [],
