@@ -25,7 +25,9 @@
     "fastify": "^3.25.0",
     "fastify-cors": "^6.0.2",
     "fastify-plugin": "^3.0.0",
-    "fastify-swagger": "^4.12.6"
+    "fastify-swagger": "^4.12.6",
+    "mongodb": "^4.2.2",
+    "mongoose": "^6.1.2"
   },
   "devDependencies": {
     "husky": "^7.0.4",
