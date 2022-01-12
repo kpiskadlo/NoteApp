@@ -1,0 +1,15 @@
+{
+  "$id": "errorResponse.json",
+  "title": "IErrorResponse",
+  "type": "object",
+  "require": ["error", "message"],
+  "additionalProperties": false,
+  "properties": {
+    "error": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}
