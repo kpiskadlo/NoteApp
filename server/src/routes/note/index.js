@@ -1,7 +1,6 @@
-import * as helloWorld from './helloWorld'
+import * as create from './create'
 
 export const note = (instance, options, next) => {
-  instance.get('/', helloWorld.handler)
-
+  instance.post('/', create.options, create.handler)
   next()
 }
