@@ -8,6 +8,8 @@ export function createMongoDbClient () {
     mongoose
       .connect(process.env.MONGO_DB_CONNECTION_STRING)
       .then(connection => {
+        // TODO: Add logger
+        console.log('MongoDB connected..')
         return connection
       })
       // TODO: Add logger
