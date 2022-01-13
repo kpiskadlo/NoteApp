@@ -2,7 +2,7 @@ import fp from 'fastify-plugin'
 import createNoteBody from '../../docs/schemas/createNoteBody.json'
 import errorResponse from '../../docs/schemas/errorResponse.json'
 
-const registerSchemas = (fastify, options, next) => {
+const schemasPlugin = (fastify, options, next) => {
   fastify.addSchema(createNoteBody)
   fastify.addSchema(errorResponse)
 
@@ -19,4 +19,4 @@ const registerSchemas = (fastify, options, next) => {
   next()
 }
 
-export default fp(registerSchemas)
+export default fp(schemasPlugin)
