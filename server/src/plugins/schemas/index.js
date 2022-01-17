@@ -10,8 +10,6 @@ const schemasPlugin = (fastify, options, next) => {
     let errorMessage = 'Validation error'
 
     if (dataVar === 'body') {
-      // TODO: Add error logger
-      console.log(errors[0])
       errorMessage = `${errors[0].dataPath} ${errors[0].message}`
     }
     return new Error(errorMessage)
