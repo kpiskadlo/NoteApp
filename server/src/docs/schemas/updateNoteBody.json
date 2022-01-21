@@ -1,0 +1,30 @@
+{
+  "$id": "updateNoteBody.json",
+  "title": "UpdateNoteBody",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["normal", "hidden", "inTrash"]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "content": {
+      "type": "string"
+    },
+    "categoryId": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

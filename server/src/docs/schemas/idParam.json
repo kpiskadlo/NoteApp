@@ -1,0 +1,12 @@
+{
+  "$id": "idParam.json",
+  "title": "IdParam",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    }
+  },
+  "required": ["id"]
+}

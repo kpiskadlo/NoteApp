@@ -9,4 +9,8 @@ export class NoteService {
   async findAll () {
     return await Note.find()
   }
+
+  async update (id, updateNoteDto) {
+    return await Note.findByIdAndUpdate(id, updateNoteDto, { new: true })
+  }
 }
