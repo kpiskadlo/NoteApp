@@ -13,4 +13,8 @@ export class NoteService {
   async update (id, updateNoteDto) {
     return await Note.findByIdAndUpdate(id, updateNoteDto, { new: true })
   }
+
+  async delete (id) {
+    await Note.findByIdAndDelete(id)
+  }
 }
