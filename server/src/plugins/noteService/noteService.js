@@ -1,8 +1,8 @@
 import Note from '../../models/note'
 
 export class NoteService {
-  create (createNoteDto) {
+  async create (createNoteDto) {
     const newNote = new Note(createNoteDto)
-    return newNote.save()
+    return await newNote.save()
   }
 }

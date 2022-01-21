@@ -1,0 +1,9 @@
+{
+  "$id": "notes.json",
+  "title": "Notes",
+  "additionalProperties": false,
+  "type": "array",
+  "items": {
+    "$ref": "note.json"
+  }
+}

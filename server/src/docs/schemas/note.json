@@ -1,0 +1,33 @@
+{
+  "$id": "note.json",
+  "title": "Note",
+  "additionalProperties": false,
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["normal", "hidden", "inTrash"]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "content": {
+      "type": "string"
+    },
+    "categoryId": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
