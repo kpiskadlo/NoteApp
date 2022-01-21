@@ -5,4 +5,8 @@ export class NoteService {
     const newNote = new Note(createNoteDto)
     return await newNote.save()
   }
+
+  async findAll () {
+    return await Note.find()
+  }
 }

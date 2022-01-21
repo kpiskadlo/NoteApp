@@ -1,6 +1,8 @@
 import * as create from './create'
+import * as findAll from './findAll'
 
 export const note = (instance, options, next) => {
   instance.post('/', create.options, create.handler)
+  instance.get('/', findAll.options, findAll.handler)
   next()
 }
