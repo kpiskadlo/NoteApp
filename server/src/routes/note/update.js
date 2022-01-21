@@ -1,7 +1,10 @@
 export const options = {
   schema: {
+    param: {
+      $ref: 'idParam.json'
+    },
     body: {
-      $ref: 'createNoteBody.json'
+      $ref: 'updateNoteBody.json'
     },
     response: {
       200: { $ref: 'note.json' },
@@ -11,6 +14,7 @@ export const options = {
   }
 }
 export const handler = async (request, reply) => {
-  const createdNote = await request.noteService.create(request.body)
-  reply.status(200).send(createdNote)
+  const id = request.params.id
+  const updatedNote = await request.noteService.update(id, request.body)
+  reply.status(200).send(updatedNote)
 }

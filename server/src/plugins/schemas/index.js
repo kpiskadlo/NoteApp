@@ -1,10 +1,18 @@
 import fp from 'fastify-plugin'
 import createNoteBody from '../../docs/schemas/createNoteBody.json'
 import errorResponse from '../../docs/schemas/errorResponse.json'
+import idParam from '../../docs/schemas/idParam.json'
+import note from '../../docs/schemas/note.json'
+import notes from '../../docs/schemas/notes.json'
+import updateNoteBody from '../../docs/schemas/updateNoteBody.json'
 
 const schemasPlugin = (fastify, options, next) => {
   fastify.addSchema(createNoteBody)
   fastify.addSchema(errorResponse)
+  fastify.addSchema(idParam)
+  fastify.addSchema(note)
+  fastify.addSchema(notes)
+  fastify.addSchema(updateNoteBody)
 
   fastify.setSchemaErrorFormatter(function (errors, dataVar) {
     let errorMessage = 'Validation error'

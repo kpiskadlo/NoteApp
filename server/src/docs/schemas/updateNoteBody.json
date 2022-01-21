@@ -1,6 +1,6 @@
 {
-  "$id": "createNoteBody.json",
-  "title": "CreateNoteBody",
+  "$id": "updateNoteBody.json",
+  "title": "UpdateNoteBody",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -26,6 +26,5 @@
         "type": "string"
       }
     }
-  },
-  "required": ["name", "content"]
+  }
 }

@@ -12,6 +12,7 @@ export function create (options) {
     .register(schemas)
     .register(swagger)
     .register(storage)
-    .register(noteService)
-    .register(note, { prefix: 'note' })
+    .register(async instance => instance.register(noteService).register(note), {
+      prefix: 'note'
+    })
 }
