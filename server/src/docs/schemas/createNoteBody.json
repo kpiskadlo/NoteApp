@@ -1,6 +1,6 @@
 {
   "$id": "createNoteBody.json",
-  "title": "ICreateNoteBody",
+  "title": "CreateNoteBody",
   "type": "object",
   "additionalProperties": false,
   "properties": {

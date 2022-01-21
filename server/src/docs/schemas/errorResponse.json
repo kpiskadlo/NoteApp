@@ -1,6 +1,6 @@
 {
   "$id": "errorResponse.json",
-  "title": "IErrorResponse",
+  "title": "ErrorResponse",
   "type": "object",
   "require": ["error", "message"],
   "additionalProperties": false,
